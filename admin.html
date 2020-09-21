@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+
+    <title>Admin Page!</title>
+  </head>
+  <body>
+
+
+
+
+<div class="top-nav-bar">
+  <div class="search-box">
+    <img src="images/logo1.png" alt="img logo" class="logo1">
+     <input type="text" class="form-control">
+     <span class="input-group-text"><i class="fa fa-search"></i></span>
+
+  </div>
+  <div class="menu-bar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Sign Up</a></li>
+      <li><a href="#">Log in</a></li>
+      <li><a href="#"><i class="fa fa-shopping-basket" area-hidden="true"></i> Cart</a></li>
+    </ul>
+
+  </div>
+
+</div>
+
+<!-- cart item details-->
+
+<div class="container cart-page">
+  <div class="row wow flash">
+        <div class="title-box col-md-12 text-center">
+      <h2>Product Available</h2>
+    </div>
+      </div>
+      <table class="tableproduct table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Serial No</th>
+          <th scope="col">Product Name</th>
+          <th scope="col">Product Image</th>
+          <th scope="col">Code</th>
+          <th scope="col">Price</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td >1</td>
+          <td>Dining Table</td>
+          <td><div class="cart-info">
+            <img src="images/dining-1.jpg" alt="">
+            <div></td>
+          <td>Code:p325</td>
+          <td>৳47,000</td>
+          <td>
+            <div class="btn-icon">
+              <button type="button" class="btn btn-secondary" title="Remove Item" data-toggle="modal" data-target="#exampleModalupdate">
+                <i class="fa fa-trash" aria-hidden="true"></i>
+              </button>
+
+              <button type="button" class="btn btn-secondary" title="Add Iten" data-toggle="modal" data-target="#exampleModaladd">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+              </button>
+
+              <button type="button" class="btn btn-secondary" title="Update Item" data-toggle="modal" data-target="#exampleModalupdate">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td >2</td>
+          <td>Corner</td>
+          <td><div class="cart-info">
+            <img src="images/corner.jpg" alt="">
+            <div></td>
+          <td>Code:p325</td>
+          <td>৳27,000</td>
+          <td>
+            <div class="btn-icon">
+              <button type="button" class="btn btn-secondary" title="Remove Item" data-toggle="modal" data-target="#exampleModaldelete">
+                <i class="fa fa-trash" aria-hidden="true"></i>
+              </button>
+
+              <button type="button" class="btn btn-secondary" title="Add Iten" data-toggle="modal" data-target="#exampleModaladd">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+              </button>
+
+              <button type="button" class="btn btn-secondary" title="Update Item" data-toggle="modal" data-target="#exampleModalupdate">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td >3</td>
+          <td>Sofa</td>
+          <td><div class="cart-info">
+            <img src="images/sofa-1.jpg" alt="">
+            <div></td>
+          <td>Code:p325</td>
+          <td>৳57,000</td>
+          <td>
+            <div class="btn-icon">
+              <button type="button" class="btn btn-secondary" title="Remove Item" data-toggle="modal" data-target="#exampleModaldelete">
+                <i class="fa fa-trash" aria-hidden="true"></i>
+              </button>
+
+              <button type="button" class="btn btn-secondary" title="Add Iten" data-toggle="modal" data-target="#exampleModaladd">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+              </button>
+
+              <button type="button" class="btn btn-secondary" title="Update Item" data-toggle="modal" data-target="#exampleModalupdate">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+<hr>
+
+<!-- Modal delete -->
+<div class="modal" tabindex="-1" role="dialog" id="exampleModaldelete">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title">Delete Product</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p>Are you sure to delete this product?</p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-primary">Save changes</button>
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!--Modal-Add-->
+<div class="container-fluid">
+<div class="modal fade" id="exampleModaladd" tabindex="-1" role="dialog" arialabelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">Add New Product</h5>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</div>
+<div class="modal-body">
+
+  <form>
+    <div class="form-row">
+      <div class="form-group col-md-5">
+        <label for="inputEmail4">Name</label>
+        <input type="email" class="form-control" id="inputEmail4" placeholder="Product name">
+      </div>
+      <div class="form-group col-md-5">
+        <label for="inputPassword4">Product Code</label>
+        <input type="password" class="form-control" id="inputPassword4" placeholder="Product code">
+      </div>
+    </div>
+    <div class="form-group col-md-10">
+      <label for="inputAddress">Price</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="price">
+    </div>
+    <div class="form-group col-md-10">
+      <label for="id">Product Details</label>
+    <textarea class="form-control" id="id" rows="3"></textarea>
+    </div>
+    <div class="form-group col-md-10">
+      <input type="file" class="custom-file-input" id="customFile">
+      <label class="custom-file-label" for="customFile">Choose file</label>
+    </div>
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">Check me out
+        </label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Item</button>
+  </form>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+</button>
+<button type="button" class="btn btn-primary">Save changes</button>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+<!--Modal-Update-->
+<div class="container-fluid">
+<div class="modal fade" id="exampleModalupdate" tabindex="-1" role="dialog" arialabelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">Update Product</h5>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</div>
+<div class="modal-body col-md-10">
+
+  <form class="form-row">
+    <input class="form-control col-md-6 " type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success col-ml-1 " type="submit">Search</button>
+  </form>
+
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<hr>
+
+<div class="container mt-5">
+    <div class="row wow flash">
+          <div class="title-box col-md-12 text-center">
+        <h2>Update Product</h2>
+      </div>
+        </div>
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-5">
+              <label for="inputEmail4">Name</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="Product name">
+            </div>
+            <div class="form-group col-md-5">
+              <label for="inputPassword4">Product Code</label>
+              <input type="password" class="form-control" id="inputPassword4" placeholder="Product code">
+            </div>
+          </div>
+          <div class="form-group col-md-10">
+            <label for="inputAddress">Price</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="price">
+          </div>
+          <div class="form-group col-md-10">
+            <label for="id">Product Details</label>
+          <textarea class="form-control" id="id" rows="3"></textarea>
+          </div>
+          <div class="form-group col-md-10">
+            <input type="file" class="custom-file-input" id="customFile">
+            <label class="custom-file-label" for="customFile">Choose file</label>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">Check me out
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Update Item</button>
+        </form>
+
+        </div>
+
+
+
+<!---footer-->
+<section class="footer">
+  <div class="container tex-footer">
+    <div class="row">
+      <div class="col-md-3 wow slideInLeft">
+        <h1>Useful Links</h1>
+        <p>Privacy Policy</p>
+        <p>Terms of Use</p>
+        <p>Return Policy</p>
+        <p>Discount Coupons</p>
+        <img src="images/cards.webp" class="img-fluid mt-2" alt="card">
+      </div>
+
+      <div class="col-md-3 wow slideInDown">
+        <h1>Company</h1>
+        <p>About Us</p>
+        <p>Contact Us</p>
+        <p>Affiliate</p>
+      </div>
+
+      <div class="col-md-3 wow slideInRight">
+        <h1>Follow us On</h1>
+        <p><i class="fa fa-facebook-official"></i> Facebook</p>
+        <p><i class="fa fa-youtube-play"></i> Youtube</p>
+        <p><i class="fa fa-linkedin"></i> Linkedin</p>
+        <p><i class="fa fa-twitter"></i> Twitter</p>
+
+      </div>
+
+      <div class="col-md-3 wow footer-image">
+        <h1>Download App</h1>
+        <img src="images/app-image.png">
+
+      </div>
+
+    </div>
+<hr><<hr>
+  </div>
+
+
+
+
+</section>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+
+
+
+
+
+    <script>
+          var wow = new WOW(
+      {
+        boxClass:     'wow',      
+        animateClass: 'animated',
+        offset:       0,
+        mobile:       true,
+        live:         true,
+        callback:     function(box) {
+
+        },
+        scrollContainer: null,
+        resetAnimation: true,
+      }
+    );
+    wow.init();
+          </script>
+
+          <script>
+           $(window).scroll(function(){
+            var scroll = $(window).scrollTop();
+            if(scroll < 900){
+                $('.fixed-top').css('background', 'transparent');
+            } else{
+                $('.fixed-top').css('background', 'rgba(255, 20, 147, 0.7)');
+            }
+        });
+          </script>
+
+  </body>
+</html>
